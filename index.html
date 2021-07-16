@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 0px;
+            padding: 0px;
+            background-color: rgb(182, 170, 170);
+        }
+        
+        nav {
+            height: 20px;
+            margin-left: 0px;
+            padding: 0px;
+            background-color: rgb(17, 9, 9);
+        }
+        
+        .container2 {
+            width: 300px;
+            height: 150px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .container2 img {
+            width: 200px;
+            height: 150px;
+            margin-left: 0px;
+            margin-right: 5px;
+            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .container1 {
+            margin-top: 30px;
+        }
+        
+        .carousel {
+            background-color: black;
+        }
+        
+        .container4 {
+            background-color: black;
+            height: 70px;
+            color: white;
+        }
+        
+        .jumbotron {
+            margin-top: 0px;
+            background-color: black;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        
+        .jumbotron h1 {
+            font-size: 35px;
+        }
+        
+        .jumbotron p {
+            font-size: 15px;
+        }
+        
+        .container4 {
+            font-size: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            background-color: black;
+        }
+        
+        .container5 {
+            font-size: 15px;
+            margin-top: -30px;
+            margin-bottom: 0px;
+            margin-left: 170px;
+            background-color: black;
+        }
+        
+        .container5 button {
+            color: white;
+            background-color: black;
+        }
+        
+        .container1 img {
+            margin-top: 10px;
+            margin-left: 30px;
+            height: 100px;
+        }
+        
+        .row img {
+            margin-top: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 310px;
+            height: 150px;
+            padding-bottom: 10px;
+        }
+        
+        .container-fluid {
+            margin-top: 10px;
+            margin-left: 205px;
+            margin-bottom: 40px;
+        }
+        
+        .row p:before {
+            color: #00f048;
+            content: "Giveawy";
+        }
+        
+        .button1 {
+            background: green;
+            transform: translate(-50%, -50%);
+        }
+        
+        .button1 :hover {
+            background-color: rgb(14, 196, 29);
+            color: rgb(137, 233, 133);
+        }
+        
+        .margin {
+            line-height: 60px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .row2::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .container7 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        
+        @keyframes example {
+            0% {
+                background-color: rgb(0, 89, 255);
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: rgb(230, 230, 97);
+                left: 100px;
+                top: 0px;
+            }
+            50% {
+                background-color: rgb(241, 59, 144);
+                left: 100px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid1">
+            <div class="navbar-header">
+                <img src="gog_icon_135545.png" width="72" height="50" style="background: lemonchiffon;">
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="#"><a href="#">SKLEP</a></li>
+
+
+                <li><a href="#">ONAS</a></li>
+                <li><a href="#">SPOLGCZNOSC</a></li>
+                <li class="#"><a href="#">POMOC</a></li>
+                <li><a href="#">ZAloGUJSIE</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <a href="news"><img src="data:image/png;base64,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"
+                        alt="Netflix" width="15" height="15"></a>
+                <li>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8Osc3hS6opfUmAfZYFh7i_GDg6RyFoRrJ_8trV08Uwlqv-9nwIg_RjhofhMgAe0kIX4&usqp=CAU" alt="Netflix" width="25" height="20"></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="news"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTel08kRxGsesvLPeAB3GKQiuxvpMtaHlvlX1u8QcthgGAq1P-iBrD_UjZx1-46LtvaNS0&usqp=CAU" alt="Netflix" width="25" height="15"></a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://writingstudio.co.za/wp-content/uploads/2021/03/godzilla-vs.-kong-poster-e1614612183583.jpg" alt="Los Angeles" style="width:1000px;height: 250px;padding-left: 75px;">
+            </div>
+
+            <div class="item">
+                <img src="https://movies.universalpictures.com/media/spru-theatrical-launch-1-en-us-1080x793-60651c6dd0582-1.jpg" alt="Chicago" style="width:1000px;height: 250px;padding-left: 75px;">
+            </div>
+
+            <div class="item">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/03/best-new-movies-netflix-march-2021-v2.png" alt="New York" style="width:1000px;height: 250px;padding-left: 75px;">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container4">
+
+        </div>
+    </div>
+    <div class="container5">
+
+
+    </div>
+
+
+    <div class="row">
+
+
+        <div class="col-sm-3 " style="background-color:rgb(247, 241, 241); "> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6yMjkfVOEa_3D9ektfk45fmpMqnSjmMBhw&usqp=CAU " alt="New York ">
+            <div>
+                <div class="container" style="width:505px;margin-top: -20px;background-color: white;">
+                    <h4><b>beyond good</b></h4>
+
+                    <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 " style="background-color:rgb(247, 241, 241); "> <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2021/06/Netflix-Best-New-TV-Shows-Movies-June-11.jpg " alt="New York ">
+            <div>
+                <div class="container" style="width:505px;margin-top: -20px;background-color: white;">
+                    <h4><b>beyond good</b></h4>
+
+                    <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 " style="background-color:rgb(247, 241, 241); "> <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-notice-dwayne-johnson-1605710983.png " alt="New York ">
+            <div>
+                <div class="container" style="width:505px;margin-top: -20px;background-color: white;">
+                    <h4><b>beyond good</b></h4>
+
+                    <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 " style="background-color:rgb(247, 241, 241); "> <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-notice-dwayne-johnson-1605710983.png " alt="New York ">
+            <div style="border-radius: 20px;">
+                <div class="container" style="width:505px;margin-top: -20px;background-color: white;">
+                    <h4><b>beyond good</b></h4>
+
+                    <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <hr>
+    <p>leurem zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych</p>
+    <hr>
+
+    <div class="row">
+
+
+        <div class="col-sm-6 " style="background-color:rgb(32, 37, 54); "> <img src="scale.jpg" alt="New York " style="width: 600px;height: 200px; border-radius: 50px;"></div>
+        <div class="col-sm-4" style="background-color:rgb(32, 27, 49);color: rgb(233, 233, 241); width:530px;height:240px">
+            <p>:zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych</p>
+            <div>zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych></div>
+            <div>zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych></div>
+            <div class="button" style="margin-left: 350px;margin-top: 100px; "> <button class="button1"><STRONG>tAC,  ODBIERZ GRE</STRONG></button> </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="margin">
+
+    </div>
+    <hr>
+    <div>leurem zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych</div>
+    <div class="card">
+        <div class="col-sm-6 ">
+            <img src="wp6674867-animated-movies-wallpapers.jpg" alt="Avatar" style="width:100%;height: 490px;border:4px solid brown">
+            <div class="container7" style="width:490px;margin-top: -10px;background-color: white; border-radius: 30px;">
+
+                <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+
+
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <img src="uwp1262133.jpeg" alt="Avatar" style="width:100%;height: 490px;border:4px solid brown">
+            <div class="container7" style="background-color: white; width:485px;margin-top: -10px;border-radius: 30px;">
+
+                <div style="background-color: rgb(174, 127, 207);width:40px;color: white;margin-left: 400px;"><strong>75%</strong></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="margin" style="color:black">
+        <p>zagrożeniom związanym z produktem leczniczym oraz krótki opis dalszych</p>
+    </div>
+    <hr>
+
+
+
+</body>
+
+</html>
